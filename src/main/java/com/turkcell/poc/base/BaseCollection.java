@@ -6,6 +6,4 @@ import org.springframework.data.annotation.Id;
 
 @Data
 public class BaseCollection {
-    @Id
-    private String id;
 }

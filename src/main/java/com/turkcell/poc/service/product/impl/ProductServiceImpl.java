@@ -26,7 +26,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     @Transactional
     public List<ProductDto> getProductList() {
-        List<ProductCollection> list = repository.findAll().stream().limit(10).collect(Collectors.toList());
+        List<ProductCollection> list = repository.findAll();
         return list.stream().map(this::convertEntityToDto).collect(Collectors.toList());
     }
 

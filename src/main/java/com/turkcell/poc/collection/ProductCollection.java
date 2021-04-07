@@ -6,6 +6,7 @@ import com.turkcell.poc.enums.HatTipiEnum;
 import com.turkcell.poc.enums.OdemeTipiEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -13,6 +14,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Data
 @Accessors(chain = true)
 public class ProductCollection extends BaseCollection {
+    @Id
+    private String id;
 
     @Field("gsm_numarasi")
     private String gsmNumarasi;

@@ -19,6 +19,7 @@
         <java.version>1.8</java.version>
         <version.openapi>1.5.2</version.openapi>
         <version.aspectj>5.2.13.RELEASE</version.aspectj>
+        <version.junit.jupiter>5.3.2</version.junit.jupiter>
     </properties>
 
     <dependencies>
@@ -61,13 +62,19 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.3.2</version>
+            <version>${version.junit.jupiter}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${version.junit.jupiter}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.3.2</version>
+            <version>${version.junit.jupiter}</version>
             <scope>test</scope>
         </dependency>
 
